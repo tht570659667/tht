@@ -1,0 +1,39 @@
+
+.hua_list {
+    position: absolute;
+    left: 0;
+    width: 235px;
+    height: 275px;
+    border: 1px solid #e6dede;
+    overflow: hidden;
+    background: #fff6f6;
+}
+.t1 {
+    height: 22px;
+    color: #999;
+    border: 1px solid #333;
+    position: relative;
+    font-weight: normal;
+    width:100%;
+}
+.t1 span{
+    font-size: 14px;
+    color: #999;
+    font-weight: normal;
+    padding: 2px;
+    margin-left: 100px;
+}
+.text_list {
+    width: 235px;
+    height: 253px;
+    overflow: hidden;
+}
+.text_list  ul li {
+    list-style: none;
+    line-height: 27px;
+    height: 27px;
+    font-size: 12px;
+    margin-left: -15px;
+    overflow: hidden;
+}
+

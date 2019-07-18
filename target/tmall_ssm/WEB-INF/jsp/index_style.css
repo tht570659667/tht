@@ -1,0 +1,370 @@
+/* CSS Document */
+/*去掉一些元素的默认样式*/
+body,div,ul,li,a,img,h3 {
+	margin: 0;
+	padding: 0;
+}
+ul,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #ff0000;
+	text-decoration: underline;
+}
+body {
+	font-family: "宋体";
+	font-size: 12px;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+
+sup {
+	color: #FF0000;
+}
+/*栏目标题样式*/
+.t1 {
+	height: 20px;
+	font-family: "宋体";
+	color: #999;
+	border: 1px solid #333;
+	position: relative;
+	font-weight: normal;
+	padding: 5px;
+}
+/*栏目出“更多”链接样式*/	 
+.t1  span a {
+	font-size: 12px;
+	font-weight: normal;
+	font-family: "宋体";
+	color: #F0F;
+	position: absolute;
+	right: 10px;
+	margin: 2px;
+}
+	  
+/*死神主页样式*/
+#con {
+	width: 960px;
+	height: 950px;
+	border: 1px #F0F solid;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*头部样式*/
+.header {
+	width: 958px;
+	height: 75px;
+	border: 1px solid #d2c4c4;
+	position: relative;
+	background: #f6ebeb;
+}
+/*logo样式*/
+.logo a {
+	height: 45px;
+	width: 150px;
+	position: absolute;
+	top: 12px;
+	left: 20px;
+}
+/*导航栏样式*/
+.nav {
+	position: absolute;
+	left: 200px;
+	top: 6px;
+}
+
+.nav ul li {
+	float: left;
+	line-height: 30px;
+}
+
+.nav ul li a {
+	display: block;
+	width: 70px;
+	height: 30px;
+	font-weight: bolder;
+	color: #000;
+	background: #FCC;
+	font-size: 16px;
+	text-align: center;
+}
+
+.nav ul li a:hover {
+	color: #FF0000;
+}
+/*热门标签样式*/
+.header .label {
+	position: absolute;
+	top: 53px;
+	left: 200px;
+	width: 620px;
+	height: 25px;
+}
+
+.label b {
+	font-size: 14px;
+	color: #F63;
+}
+.label a {
+	font-size: 12px;
+}
+/*头部连接样式*/
+.links {
+	width: 50px;
+	position: absolute;
+	right: 10px;
+	top: 2px;
+}
+
+.links ul li {
+	line-height: 18px;
+}
+
+.links ul li a {
+	color: #03F;
+}
+	  
+						  
+/*主体样式*/
+.main {
+	width: 940px;
+	height: 805px;
+	float: left;
+	margin: 3px;
+	padding: 7px;
+}
+/*内容左边样式样式*/
+.main_left {
+	width: 510px;
+	height: 580px;
+	float: left;
+}
+ /*死神话题样式*/
+.topic {
+	height: 292px;
+	width: 500px;
+	border: 1px solid #e6dede;
+	overflow: hidden;
+	position: relative;
+	background: #fff6f6;
+}
+/*死神话题的图片样式*/
+.topic_picture {
+	height: 260px;
+	width: 500px;
+	overflow: hidden;
+	position: absolute;
+	top: 32px;
+	z-index: 1;
+}
+
+.topic_picture ul li {
+	width: 500px;
+	height: 260px;
+	float: left;
+	display: none;
+}
+/*死神话题的说明文字样式*/
+.topic_text {
+	width: 420px;
+	height: 30px;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	bottom: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+.topic_text ul li {
+	font-size: 16px;
+	line-height: 30px;
+	text-align: left;
+	font-weight: bold;
+	margin-left: 10px;
+	display: none;
+}
+
+.topic_text ul li a {
+	color: #dcdcdc;
+}
+
+
+/*死神话题的指示器样式*/
+.topic_pointer {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 80px;
+	height: 30px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.topic_pointer span {
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-left: 8px;
+	margin-top: 10px;
+	border-radius: 2px;
+	background: #dcdcdc;
+	cursor: pointer;
+}
+
+.topic_pointer span.on {
+	background: #1e90ff;
+}
+/*上一个、下一个话题的切换按钮*/
+#prev_topic,#next_topic {
+	display: block;
+	width: 20px;
+	height: 230px;
+	position: absolute;
+	z-index: 2;
+}
+
+#prev_topic{
+	top: 32px;
+	left: 0px;
+}
+
+#next_topic {
+	top: 32px;
+	right: 0px;
+}
+
+#prev_topic a,#next_topic a {
+	display: none;
+	width: 20px;
+	height: 25px;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 110px;
+	text-align: center;
+	font-size: 20px;
+	filter: alpha(opacity=40);
+	background-color: #000;
+	background-color: rgba(0,0,0,0.5);
+}
+#prev_topic:hover a{display:block;}
+#next_topic:hover a{display:block;}
+
+/*动画、漫画列表样式*/
+.dm_list {
+	width: 515px;
+	height: 285px;
+	float: left;
+	overflow: hidden;
+}
+
+.hua_list {
+	width: 235px;
+	height: 275px;
+	border: 1px solid #e6dede;
+	float: left;
+	margin-left: 8px;
+	margin-top: 8px;
+	overflow: hidden;
+	background: #fff6f6;
+}
+
+.text_list {
+	width: 235px;
+	height: 253px;
+	overflow: hidden;
+}
+
+
+.hua_list  ul li {
+	line-height: 27px;
+	height: 27px;
+	padding:0 7px;
+	font-size: 14px;
+	overflow: hidden;
+}
+ /*死神资讯样式*/
+.main_right {
+	width: 425px;
+	height: 577px;
+	float: left;
+	border: 1px solid #e6dede;
+	background: #fff6f6;
+}
+
+.red_zixun li a {
+	width: 236px;
+	margin-left: 80px;
+	line-height: 22px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.normal_zixun li {
+	line-height: 26px;
+	height: 26px;
+	overflow: hidden;
+	padding: 0px 2px;
+	font-size: 14px;
+	position: relative;
+}
+
+.normal_zixun li span {
+	position: absolute;
+	right: 5px;
+}
+ /*死神专题样式*/
+.special {
+	width: 935px;
+	height: 215px;
+	border: 1px solid #e6dede;
+	margin-top: 590px;
+	background: #fff6f6;
+}
+
+.special_list {
+	width: 100%;
+	height: 160px;
+	padding: 4px;
+}
+
+.special_list li {
+	width: 230px;
+	height: 140px;
+	display: block;
+	float: left;
+	margin: 10px 0px 10px 3px;
+}
+
+.special_list li p {
+	padding: 5px 2px 5px 2px;
+	height: 15px;
+	width: 205px;
+	text-align: center;
+	font-size: 13px;
+}	
+			
+ /*页脚样式*/
+.footer {
+	width: 950px;
+	height: 35px;
+	background: #fff6f6;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding: 5px;
+}
+
+.footer p {
+	margin-top: 10px;
+	font-size: 12px;
+	text-align: center;
+	color: #666;
+}
